@@ -28,7 +28,9 @@ imag_parts = np.imag(y_values)
 zero_imag_indices = np.isclose(imag_parts, 0, atol=1e-2)  # Tolerance for floating-point precision
 zero_imag_lengths = length_values[zero_imag_indices]
 zero_imag_points_real = real_parts[zero_imag_indices]
+print(zero_imag_points_real)
 zero_imag_points_imag = imag_parts[zero_imag_indices]
+print(zero_imag_points_imag)
 
 # Plot the results on the complex plane
 plt.figure(figsize=(8, 6))
